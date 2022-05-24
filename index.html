@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<title>Create New User</title>
+	<link rel="icon" type="image/x-icon" href="images/logo.png">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="javascript.js"></script>
+</head>
+
+<body>
+	<div>
+		<div class="page">
+			<img src="images/logo.png">
+			<h1>Create New User</h1>
+			
+			<div id="divHalf">
+				<div id="left">
+					<label for="firstName">First Name</label><br>
+					<input class="name" id="firstName" type="text" required autocomplete="off"></input><br><br>
+				</div>
+			
+				<div id="right">
+					<label for="lastName"> Last Name</label><br>
+					<input class="name" id="lastName" type="text" required autocomplete="off"></input><br><br>
+				</div>
+				
+				<label id="labUser" for="username">Username</label><br>
+				<div id="left">
+					<input id="username" type="text" readonly autocomplete="off"></input>
+				</div>
+				<div id="right">
+					<input id="butUser" type="button" onclick="newUsername()" value="Generate Username"></input>
+				</div>
+				<p id="userError"></p><br>
+			
+				<label for="pass">Password</label><br>
+				<div id="left">
+					<input id="pass" type="text" readonly autocomplete="off"></input>
+				</div>
+				<div id="right">
+					<input id="butPass" type="button" onclick="newPass()" value="Generate New Password"></input><br><br>
+				</div>
+			</div>
+			
+			<div id="divFull">
+				<br><br><br><br><label >Text Message</label><br>
+				<textarea id="messageBox" type="text" readonly autocomplete="off"></textarea><br>
+			</div>
+			
+			<div id="divHalf">
+				<div id="left">
+					<input id="butMess" type="button" onclick="textMessage()" value="Format Text Message">
+				</div>
+				<div id="right">
+					<input id="butCopy" type="button" onclick="copyToClipboard()" value="Copy To Clipboard"></input>
+				</div>
+			</div>
+			
+			<div class="middle" style="width:70%; text-align: center">
+				<br><br><br><br><br>
+				<input id="butClea" type="button" onclick="clearForm()" value="Clear Form"></input><br><br>
+			
+				<br>
+
+				<div class="inst" >
+					<h2>Instructions</h2 >
+					
+					<ol>
+						<li>Enter the users names</li>
+						<li>Click <b>Generate Username</b></li>
+						<li>Click <b>Generate Password</b></li>
+						<li>Click <b>Generate Text Message</b></li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
